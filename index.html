@@ -7,182 +7,248 @@
 <title>MAQUIMEC | Maquinaria Pesada & Mecánica</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #111;
-    color: #fff;
-    line-height: 1.6;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+    line-height:1.6;
 }
 
-header {
-    background: #111;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid #f58220;
+header{
+    background:#111;
+    border-bottom:3px solid #f5a900;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #f58220;
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.logo span {
-    color: white;
+.logo{
+    color:#f5a900;
+    font-size:30px;
+    font-weight:bold;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
 }
 
-nav a:hover {
-    color: #f58220;
+nav a:hover{
+    color:#f5a900;
 }
 
-.hero {
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 20px;
+.hero{
+    min-height:620px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
     background:
-        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
-        url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80")
-        center/cover;
+    linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.75)),
+    url("YALA.jpg.jpeg") center/cover;
 }
 
-.hero h1 {
-    font-size: 55px;
-    margin-bottom: 15px;
-    color: #f58220;
+.hero-content{
+    max-width:900px;
 }
 
-.hero h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+.hero h1{
+    color:#f5a900;
+    font-size:55px;
+    margin-bottom:15px;
 }
 
-.hero p {
-    font-size: 20px;
-    max-width: 750px;
-    margin: auto;
+.hero h2{
+    font-size:32px;
+    margin-bottom:20px;
 }
 
-.boton {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background: #f58220;
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
 }
 
-.boton:hover {
-    background: white;
+.btn{
+    display:inline-block;
+    background:#f5a900;
+    color:#111;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
 }
 
-section {
-    padding: 70px 8%;
+.btn:hover{
+    background:#ffbf19;
+    transform:scale(1.03);
 }
 
-.titulo {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #f58220;
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 25px;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+.titulo{
+    text-align:center;
+    color:#f5a900;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-.card {
-    background: #222;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid #333;
+.subtitulo{
+    text-align:center;
+    color:#ddd;
+    margin-bottom:45px;
 }
 
-.card h3 {
-    color: #f58220;
-    margin-bottom: 12px;
-    font-size: 23px;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
-.card p {
-    color: #ddd;
+.card{
+    background:#1d1d1d;
+    border:1px solid #333;
+    border-top:4px solid #f5a900;
+    border-radius:10px;
+    padding:30px 20px;
+    text-align:center;
+    transition:.3s;
 }
 
-.info {
-    background: #181818;
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#f5a900;
 }
 
-.contacto {
-    text-align: center;
-    background: #f58220;
-    color: #111;
+.card h3{
+    color:#f5a900;
+    margin-bottom:10px;
+    font-size:22px;
 }
 
-.contacto .titulo {
-    color: #111;
+.card p{
+    color:#ddd;
 }
 
-.contacto p {
-    font-size: 20px;
-    margin: 8px;
+.numeros{
+    background:#f5a900;
+    color:#111;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    text-align:center;
+    gap:20px;
+    padding:45px 20px;
 }
 
-.whatsapp {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+.numero h3{
+    font-size:38px;
 }
 
-footer {
-    background: #080808;
-    text-align: center;
-    padding: 25px;
-    color: #aaa;
+.numero p{
+    font-weight:bold;
 }
 
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #333;
+}
+
+.galeria img:hover{
+    border-color:#f5a900;
+}
+
+.contacto{
+    background:#1b1b1b;
+    border-top:3px solid #f5a900;
+}
+
+.contacto-box{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.contacto-box p{
+    font-size:19px;
+    margin:12px 0;
+}
+
+.whatsapp{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#080808;
+    text-align:center;
+    padding:25px;
+    color:#aaa;
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
     }
 
-    nav a {
-        margin: 5px;
+    nav a{
+        margin:0 7px;
+        font-size:14px;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    .hero h1{
+        font-size:40px;
     }
 
-    .hero h2 {
-        font-size: 23px;
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .titulo{
+        font-size:30px;
     }
 }
 </style>
@@ -191,133 +257,194 @@ footer {
 <body>
 
 <header>
-    <div class="logo">MAQUI<span>MEC</span></div>
+<div class="navbar">
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+<div class="logo">MAQUIMEC</div>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#cursos">Cursos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</div>
 </header>
 
 <section class="hero" id="inicio">
-    <div>
-        <h1>MAQUIMEC</h1>
+<div class="hero-content">
 
-        <h2>Formando Operadores de Maquinaria & Mecánica</h2>
+<h1>MAQUIMEC</h1>
 
-        <p>
-            Prepárate para operar maquinaria pesada y desarrolla
-            conocimientos en mecánica con teoría y práctica.
-        </p>
+<h2>Formando Operadores de Maquinaria & Mecánica</h2>
 
-        <a class="boton" href="#contacto">
-            ¡QUIERO MATRICULARME!
-        </a>
-    </div>
+<p>
+Prepárate para operar maquinaria pesada y desarrolla
+conocimientos en mecánica con teoría y práctica.
+</p>
+
+<a class="btn" href="#contacto">¡QUIERO MATRICULARME!</a>
+
+</div>
 </section>
 
 <section id="cursos">
-    <h2 class="titulo">NUESTROS CURSOS</h2>
 
-    <div class="cards">
+<h2 class="titulo">Nuestros Cursos</h2>
 
-        <div class="card">
-            <h3>🚜 Retroexcavadora</h3>
-            <p>Aprende técnicas de operación y manejo de maquinaria.</p>
-        </div>
+<p class="subtitulo">
+Capacitación orientada a la práctica y al desarrollo de habilidades técnicas.
+</p>
 
-        <div class="card">
-            <h3>🚛 Volquete</h3>
-            <p>Conoce el funcionamiento y operación del equipo.</p>
-        </div>
+<div class="cards">
 
-        <div class="card">
-            <h3>🏗️ Minicargador</h3>
-            <p>Capacitación práctica para desarrollar tus habilidades.</p>
-        </div>
+<div class="card">
+<h3>🚜 Retroexcavadora</h3>
+<p>Aprende técnicas de operación y seguridad.</p>
+</div>
 
-        <div class="card">
-            <h3>🚜 Rodillo Compactador</h3>
-            <p>Aprende principios de operación y compactación.</p>
-        </div>
+<div class="card">
+<h3>🚛 Volquete</h3>
+<p>Conoce operación, seguridad y manejo.</p>
+</div>
 
-        <div class="card">
-            <h3>🚙 Camioneta Minera</h3>
-            <p>Conoce aspectos fundamentales de operación y seguridad.</p>
-        </div>
+<div class="card">
+<h3>🏗️ Minicargador</h3>
+<p>Desarrolla habilidades de operación.</p>
+</div>
 
-        <div class="card">
-            <h3>🔧 Mecánica</h3>
-            <p>Conocimientos de motores, mantenimiento y sistemas.</p>
-        </div>
+<div class="card">
+<h3>🚧 Rodillo Compactador</h3>
+<p>Aprende procedimientos de compactación.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>🚙 Camioneta Minera</h3>
+<p>Capacitación para conducción en campo.</p>
+</div>
+
+<div class="card">
+<h3>🔧 Mecánica</h3>
+<p>Conoce motores, mantenimiento y sistemas mecánicos.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="info" id="nosotros">
+<div class="numeros">
 
-    <h2 class="titulo">¿POR QUÉ ESTUDIAR EN MAQUIMEC?</h2>
+<div class="numero">
+<h3>10</h3>
+<p>Meses de formación</p>
+</div>
 
-    <div class="cards">
+<div class="numero">
+<h3>100%</h3>
+<p>Enfoque práctico</p>
+</div>
 
-        <div class="card">
-            <h3>👷 Práctica</h3>
-            <p>
-                Desarrolla tus habilidades con una formación orientada
-                a la práctica.
-            </p>
-        </div>
+<div class="numero">
+<h3>6</h3>
+<p>Módulos de formación</p>
+</div>
 
-        <div class="card">
-            <h3>📚 Formación</h3>
-            <p>
-                Aprende conocimientos fundamentales de maquinaria,
-                operación y mecánica.
-            </p>
-        </div>
+<div class="numero">
+<h3>📅</h3>
+<p>Clases los domingos</p>
+</div>
 
-        <div class="card">
-            <h3>🦺 Seguridad</h3>
-            <p>
-                Conoce la importancia de trabajar aplicando
-                procedimientos de seguridad.
-            </p>
-        </div>
+</div>
 
-        <div class="card">
-            <h3>📅 Solo domingos</h3>
-            <p>
-                Una alternativa de capacitación pensada para quienes
-                necesitan organizar su tiempo.
-            </p>
-        </div>
+<section id="nosotros">
 
-    </div>
+<h2 class="titulo">¿Por qué estudiar en MAQUIMEC?</h2>
+
+<p class="subtitulo">
+Formamos personas interesadas en desarrollar conocimientos en maquinaria pesada y mecánica.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎓 Formación</h3>
+<p>Teoría y práctica para fortalecer tus conocimientos.</p>
+</div>
+
+<div class="card">
+<h3>🚜 Práctica</h3>
+<p>Experiencias de aprendizaje relacionadas con maquinaria.</p>
+</div>
+
+<div class="card">
+<h3>🔧 Mecánica</h3>
+<p>Aprendizaje de mantenimiento y sistemas mecánicos.</p>
+</div>
+
+<div class="card">
+<h3>🦺 Seguridad</h3>
+<p>Importancia de la seguridad durante las actividades prácticas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2 class="titulo">Galería de Prácticas</h2>
+
+<p class="subtitulo">
+Conoce algunas de nuestras actividades de formación.
+</p>
+
+<div class="galeria">
+
+<img src="ChatGPT Imagen 10 jun 2026, 17_13_25.png" alt="Práctica MAQUIMEC">
+
+<img src="ChatGPT Imagen 10 jun 2026, 17_13_48.png" alt="Formación MAQUIMEC">
+
+<img src="ChatGPT Imagen 11 de mayo de 2026, 17_56_40.png" alt="Estudiantes MAQUIMEC">
+
+<img src="Imagen de WhatsApp 2026-08-15 a las 16:55:2.jpeg" alt="Práctica de maquinaria">
+
+<img src="Imagen de WhatsApp 2026-09-13 a las 11:43.5.jpeg" alt="Actividad MAQUIMEC">
+
+<img src="Imagen de WhatsApp 2026-09-27 a las 12.07.44.jpeg" alt="Estudiantes MAQUIMEC">
+
+</div>
+
 </section>
 
 <section class="contacto" id="contacto">
 
-    <h2 class="titulo">¡CONTÁCTANOS!</h2>
+<div class="contacto-box">
 
-    <p>📍 Jr. 27 de Noviembre #201 - Chota</p>
+<h2 class="titulo">Contáctanos</h2>
 
-    <p>📞 917 349 450</p>
+<p>📍 Jr. 27 de Noviembre #201 - Chota</p>
 
-    <p>🎓 ¡Prepárate para tu futuro profesional!</p>
+<p>📱 917349450</p>
 
-    <a
-        class="whatsapp"
-        href="https://wa.me/51917349450"
-        target="_blank">
-        💬 ESCRÍBENOS POR WHATSAPP
-    </a>
+<p>📚 Clases todos los domingos</p>
+
+<a class="whatsapp"
+href="https://wa.me/51917349450"
+target="_blank">
+💬 ESCRÍBENOS POR WHATSAPP
+</a>
+
+</div>
 
 </section>
 
 <footer>
-    © 2026 MAQUIMEC - Todos los derechos reservados.
+
+<p>© 2026 MAQUIMEC - Todos los derechos reservados.</p>
+
+<p>Formando Operadores de Maquinaria Pesada & Mecánica</p>
+
 </footer>
 
 </body>
