@@ -1,20 +1,324 @@
-<h2>Nuestros cursos</h2>
-        <ul>
-            <li>Retroexcavadora</li>
-            <li>Volquete</li>
-            <li>Minicargador</li>
-            <li>Rodillo compactador</li>
-            <li>Camioneta minera</li>
-        </ul>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <h2>Contáctanos</h2>
-        <p>📍 Jr. 27 de Noviembre #201 - Chota</p>
-        <p>📞 917349450</p>
-    </main>
+<title>MAQUIMEC | Maquinaria Pesada & Mecánica</title>
 
-    <footer>
-        <p>© 2026 MAQUIMEC - Todos los derechos reservados</p>
-    </footer>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f58220;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f58220;
+}
+
+.logo span {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f58220;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
+        url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #f58220;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #f58220;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background: white;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f58220;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.card h3 {
+    color: #f58220;
+    margin-bottom: 12px;
+    font-size: 23px;
+}
+
+.card p {
+    color: #ddd;
+}
+
+.info {
+    background: #181818;
+}
+
+.contacto {
+    text-align: center;
+    background: #f58220;
+    color: #111;
+}
+
+.contacto .titulo {
+    color: #111;
+}
+
+.contacto p {
+    font-size: 20px;
+    margin: 8px;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MAQUI<span>MEC</span></div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h1>MAQUIMEC</h1>
+
+        <h2>Formando Operadores de Maquinaria & Mecánica</h2>
+
+        <p>
+            Prepárate para operar maquinaria pesada y desarrolla
+            conocimientos en mecánica con teoría y práctica.
+        </p>
+
+        <a class="boton" href="#contacto">
+            ¡QUIERO MATRICULARME!
+        </a>
+    </div>
+</section>
+
+<section id="cursos">
+    <h2 class="titulo">NUESTROS CURSOS</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🚜 Retroexcavadora</h3>
+            <p>Aprende técnicas de operación y manejo de maquinaria.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚛 Volquete</h3>
+            <p>Conoce el funcionamiento y operación del equipo.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏗️ Minicargador</h3>
+            <p>Capacitación práctica para desarrollar tus habilidades.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚜 Rodillo Compactador</h3>
+            <p>Aprende principios de operación y compactación.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚙 Camioneta Minera</h3>
+            <p>Conoce aspectos fundamentales de operación y seguridad.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔧 Mecánica</h3>
+            <p>Conocimientos de motores, mantenimiento y sistemas.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="info" id="nosotros">
+
+    <h2 class="titulo">¿POR QUÉ ESTUDIAR EN MAQUIMEC?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>👷 Práctica</h3>
+            <p>
+                Desarrolla tus habilidades con una formación orientada
+                a la práctica.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Formación</h3>
+            <p>
+                Aprende conocimientos fundamentales de maquinaria,
+                operación y mecánica.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🦺 Seguridad</h3>
+            <p>
+                Conoce la importancia de trabajar aplicando
+                procedimientos de seguridad.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📅 Solo domingos</h3>
+            <p>
+                Una alternativa de capacitación pensada para quienes
+                necesitan organizar su tiempo.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+
+    <h2 class="titulo">¡CONTÁCTANOS!</h2>
+
+    <p>📍 Jr. 27 de Noviembre #201 - Chota</p>
+
+    <p>📞 917 349 450</p>
+
+    <p>🎓 ¡Prepárate para tu futuro profesional!</p>
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/51917349450"
+        target="_blank">
+        💬 ESCRÍBENOS POR WHATSAPP
+    </a>
+
+</section>
+
+<footer>
+    © 2026 MAQUIMEC - Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
